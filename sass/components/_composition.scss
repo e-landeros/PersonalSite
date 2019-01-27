@@ -3,7 +3,7 @@
 
     &__photo {
         // percentages for images so they can adjust to viewport
-        width: 55%;
+        width: 60%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
         border-radius: 2px;
         position: absolute;
@@ -24,29 +24,29 @@
 
             @include respond(tab-port){
                 top:1rem;
-                transform: scale(1.3);
+                transform: scale(1.5);
             }
         }
 
         &--p2 {
             right: 0;
-            top:2rem;
+            top:5rem;
 
             @include respond(tab-port){
                 top:-2rem;
-                transform: scale(1.3);
+                transform: scale(1.5);
                 z-index:300;
             }
         }
 
         &--p3 {
             left: 8%;
-            top:15rem;
+            top:19rem;
 
             @include respond(tab-port){
                 top:1rem;
                 left: 0;
-                transform: scale(1.3);
+                transform: scale(1.5);
             }
         }
 
