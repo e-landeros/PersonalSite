@@ -1,0 +1,16 @@
+{
+  "name": "personalsite",
+  "version": "1.0.0",
+  "description": "a personal website to show off some work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fabian landeros",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.4.6",
+    "concat": "^1.0.3",
+    "node-sass": "^4.11.0"
+  }
+}

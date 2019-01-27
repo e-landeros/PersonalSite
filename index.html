@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <title>Flex Reservations</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt=" reservation logo" class="logo">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Hotels">
+                    <button class="search__button">
+                        <!-- <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#magnifying-glass"></use>
+                        </svg> -->
+                        <img src="img/svg/magnifying-glass.svg" alt="magnifying-glass" class="search__icon">
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <!-- <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#bookmark"></use>
+                        </svg> -->
+                        <img src="img/svg/bookmark.svg" alt="bookmark" class="user-nav__icon">
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <!-- <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#chat"></use>
+                        </svg> -->
+                        <img src="img/svg/chat.svg" alt="chat" class="user-nav__icon">
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Fabian</span>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!-- FLEX CONTAINER content--> 
+            <div class="content"> 
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <!-- <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#account-login"></use>
+                                </svg>   -->
+                                <img src="img/svg/home.svg" alt="home" class="side-nav__icon">
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <!-- <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#compass" id="compass"></use>
+                                </svg>  -->
+                                <img src="img/svg/compass.svg" alt="compass" class="side-nav__icon">
+                                <span>Flight</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <img src="img/svg/map.svg" alt="map" class="side-nav__icon">
+                                <span>Car Rental</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <img src="img/svg/globe.svg" alt="globe" class="side-nav__icon">
+                                <span>Tours</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        &copy; 2019 by Fabian Landeros
+                    </div>
+                </nav>
+
+
+
+                <main class="hotel-view">
+                    <div class="gallery">
+                       <figure class="gallery_item">
+                           <img src="img/adrian-spiegelt-261642-unsplash.png" alt="hotel photo 1" class="gallery__photo">
+                       </figure>
+
+                       <figure class="gallery_item">
+                            <img src="img/steve-roe-674209-unsplash.png" alt="hotel photo 2" class="gallery__photo">
+                        </figure>
+
+                        <figure class="gallery_item">
+                            <img src="img/steve-roe-685721-unsplash.png" alt="hotel photo 3" class="gallery__photo">
+                        </figure>
+                    </div>
+
+
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Tokyo Cube Hotel
+                        </h1>
+                        <div class="overview__stars">
+                            <img src="img/svg/star.svg" alt="star" class="overview__icon-star">
+                            <img src="img/svg/star.svg" alt="star" class="overview__icon-star">
+                            <img src="img/svg/star.svg" alt="star" class="overview__icon-star">
+                            <img src="img/svg/star.svg" alt="star" class="overview__icon-star">
+                            <img src="img/svg/star.svg" alt="star" class="overview__icon-star">
+                        </div>
+
+                        <div class="overview__location">
+                            <img src="img/svg/location.svg" alt="location" class="overview__icon-location">
+                            <button class="btn-inline">Tokyo, Japan</button>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">8.6</div>
+                            <div class="overview__rating-count">429 votes</div>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam placeat harum illum enim. Natus, laudantium temporibus quo maiores sit corporis aut nesciunt id accusamus repudiandae!
+                            </p>
+                            <p class="paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam placeat harum illum enim. Natus, laudantium temporibus quo maiores sit corporis aut nesciunt id accusamus repudiandae!
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">Close to the beach</li>
+                                <li class="list__item">Breakfast included</li>
+                                <li class="list__item">Free airport shuttle</li>
+                                <li class="list__item">Free Wifi in all rooms</li>
+                                <li class="list__item">Air conditiong and heating</li>
+                                <li class="list__item">Pets allowed</li>
+                                <li class="list__item">We speak all languages</li>
+                                <li class="list__item">Perfect for families</li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Lucy and 3 other friends recommend this hotel.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="img/person3.png" alt="" class="recommend__photo">
+                                    <img src="img/person4.png" alt="" class="recommend__photo">
+                                    <img src="img/person1.png" alt="" class="recommend__photo">
+                                    <img src="img/person2.png" alt="" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-reviews">
+                            User Reviews
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
