@@ -335,13 +335,8 @@ body {
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #0abff1, #78ee76); }
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom, #0abff1, #78ee76); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -355,11 +350,11 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/django_models.png); }
+      background-image: url(../img/django_models.png); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-2-large.jpg); }
+      background-image: url(../img/code_portfolio.png); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #0abff1, #78ee76), url(../img/nat-3-large.jpg); }
+      background-image: url(../img/flask_blog.png); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -374,12 +369,6 @@ body {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
-    .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(10, 191, 241, 0.85), rgba(120, 238, 118, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -399,16 +388,16 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-  .card__price-box {
+  .card__info-box {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
+  .card__info-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
+  .card__info-text {
+    font-size: 1.5rem; }
   @media (max-width: 56.25em) {
     .card {
       height: auto;

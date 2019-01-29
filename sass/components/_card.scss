@@ -26,18 +26,7 @@
 
         &--back {
             transform: rotateY(180deg);
-
-            &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-            }
-
-            &-2 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            }
-
-            &-3 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            }
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
         }
     }
 
@@ -60,21 +49,15 @@
         border-top-right-radius: 3px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-             url(../img/django_models.png);
-            
+            background-image: url(../img/django_models.png); 
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-            url(../img/nat-2-large.jpg);
-            
+            background-image: url(../img/code_portfolio.png);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-            url(../img/nat-3-large.jpg);
-            
+            background-image: url(../img/flask_blog.png);    
         }
     }
 
@@ -94,24 +77,6 @@
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-
-        &--1 {
-            background-image: linear-gradient(to right bottom,
-            rgba($color-secondary-light,.85),
-            rgba($color-secondary-dark, .85) );
-        }
-
-        &--2 {
-            background-image: linear-gradient(to right bottom,
-            rgba($color-tertiary-light,.85),
-            rgba($color-tertiary-dark, .85) );
-        }
-
-        &--3 {
-            background-image: linear-gradient(to right bottom,
-            rgba($color-primary-light,.85),
-            rgba($color-primary-dark, .85) );
-        }
     }
 
     &__details {
@@ -142,20 +107,20 @@
         width: 90%;
         text-align: center;
     }
-    &__price-box {
+    &__info-box {
         text-align: center;
         color: $color-white;
         margin-bottom: 8rem;
     }
 
-    &__price-only {
-        font-size: 1.4rem;
+    &__info-title {
+        font-size: 2rem;
         text-transform: uppercase;
+        margin-bottom: 2rem;
     }
 
-    &__price-value {
-        font-size: 6rem;
-        font-weight: 100;
+    &__info-text {
+        font-size: 1.5rem;
     }
 
 
