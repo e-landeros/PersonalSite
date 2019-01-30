@@ -15,7 +15,7 @@
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-            <label for="navi-toggle" class="navigation__button">
+            <label for="navi-toggle" class="navigation__button" id="labeltoggle">
                 <span class="navigation__icon">&nbsp;</span>
             </label>
 
@@ -23,20 +23,17 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Me</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link" id="alabel"><span>01</span>About</a></li>
+                    <li class="navigation__item"><a href="#skills" class="navigation__link"><span>02</span>Skills</a></li>
+                    <li class="navigation__item"><a href="#projects" class="navigation__link"><span>03</span>Projects</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link"><span>04</span>Contact</a></li>
                     <li class="navigation__item"><a target="_blank" href="img/dev_landeros.pdf" class="navigation__link"><span>05</span>Download Resume</a></li>
                 </ul>
             </nav>
         </div>
 
-
+    
         <header class="header">
-            <!-- <div class="header__logo-box">
-                <img srcset="img/logo-1x.png 1x, img/logo.png 2x" alt="Logo" class="header__logo">
-            </div> -->
 
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -90,7 +87,7 @@
             </div>
             </section>
 <!-- <img src="css/open-iconic/svg/briefcase.svg" alt=""> -->
-            <section class="section-features">
+            <section class="section-features" id="skills">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -138,7 +135,7 @@
                     
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="projects">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                     Some Cool Projects
@@ -243,7 +240,7 @@
                             <div class="card__side card__side--back card__side--back-3">
                                 <div class="card__cta">
                                     <div class="card__info-box">
-                                        <p class="card__info-title">Flask Blog Blue Print</p>
+                                        <p class="card__info-title">Flask Blog Blueprint</p>
                                         <p class="card__info-text">This is a plugable Flask Application which allows 
                                         developers to add a full featured blog backend to their existing app. It has full user 
                                         creation and customization support. The frontend was not fully developed it uses Bootstrap as a 
@@ -317,22 +314,22 @@
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
-                            <form action="#" class="form">
+                            <form method="POST" action="https://formspree.io/landerosedgard@gmail.com" class="form" enctype="text/plain">
                                     <div class="u-margin-bottom-medium">
-                                    <h2 class="heading-secondary">Hit me up.</h2>
+                                    <h2 class="heading-secondary">Contact Me.</h2>
                                 </div> 
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <input name="fullname" type="text" class="form__input" placeholder="Full Name" id="name" required>
                                     <label for="name" class="form__label">Full Name</label>
                                 </div>
 
                                 <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                    <input name="email" type="email" class="form__input" placeholder="Email address" id="email" required>
                                     <label for="email" class="form__label">Email address</label>
                                 </div>
-                                
+
                                 <div class="form__group">
-                                    <button class="btn btn--green">Next Step &rarr;</button>
+                                    <button type="submit" class="btn btn--green">Send &rarr;</button>
                                 </div>
                             </form>
                         </div>
@@ -365,7 +362,7 @@
         </footer>
 
 <!-- POPUP MODAL PURE CSS -->
-        <div class="popup" id="popup">
+        <!-- <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
                     <img src="img/nat-3-large.jpg" alt="Tour Photo" class="popup__img">
@@ -383,7 +380,7 @@
                     <a href="#" class="btn btn--green">Book Now</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- <section class="grid-test">
             <div class="row">
@@ -431,7 +428,16 @@
                 </div>
             </div>
         </section> -->
-        
-        
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<script>   
+        $('.navigation__link').click(function(){
+            $('.navigation__checkbox').click()
+        });
+</script>
     </body>
 </html>
+
+<!-- $('.navigation__link').click(function() {
+    $('#navigation__icon').trigger('click');
+}); -->
