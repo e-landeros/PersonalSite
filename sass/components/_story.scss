@@ -45,7 +45,8 @@
 
     &__img {
         width: 100%;
-        // margin-left: 10%;
+        margin-left: 10%;
+        margin-top: 10%;
         transform:translateX(-1rem)scale(1.4);
         backface-visibility: hidden;
         transition: all .5s;
@@ -80,10 +81,5 @@
     &:hover &__caption{
         opacity: 1;
         transform: translate(-50%,-50%);
-    }
-    &:hover &__img {
-        transform:translateX(-1.5rem)scale(1);
-        filter: blur(3px)brightness(80%);
-
     }
 }
